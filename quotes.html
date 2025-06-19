@@ -1,0 +1,193 @@
+<style>
+
+    body{
+        background-color: mediumspringgreen;
+    }
+
+    .about-content{
+        background-color: lightgreen;
+        height:70%;
+        width:65%;
+
+        position: absolute;
+        top:21%;
+        left: 30%;
+        opacity:1;
+        border-radius: 100px;
+        border:12px solid orange;
+        box-shadow: 20px 20px 20px black;
+        z-index:2;
+    }
+
+    .main-header{
+        color: yellow;
+        font-size:2.6rem;
+        font-weight:bolder;
+        text-align: center;
+        position: relative;
+        left:12%;
+        transition: 2s;
+        font-style: italic;
+        font-stretch: condensed;
+        text-decoration: underline;
+
+    }
+
+    .about-para
+    {
+        font-size: 25px;
+        width:100%;
+        font-weight: bolder; 
+
+        position: relative;
+        left:2.1%;
+        color:darkblue;
+    }
+
+    .closing-tag
+    {
+        font-size: 25px;
+        width:100%;
+        font-weight: bolder; 
+
+        position: relative;
+        left:15%;
+        top:1%;
+        color:darkred;
+    }
+
+    .write{
+        width: 600px;
+        height:200px;
+        position: relative;
+        left:20%;
+        border: 12px solid gold;
+    }
+
+    #back
+    {
+    background-color: black;
+    color:  magenta;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 200px;
+    font-weight:bolder;
+
+    position: relative;
+    left:30%;
+    top:0%;
+    bottom: 2%;
+  
+    }
+
+    #back:hover{
+        color: gold;
+        transform: scale(-20px);
+    }
+
+    #important{
+    background-color: black;
+    color:  magenta;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 200px;
+    font-weight:bolder;
+
+    position: absolute;
+    right: 5%;
+ 
+    }
+
+    #important:hover{
+        color: gold;
+        transform: scale(-20px);
+    }
+
+    .final-page{
+        width:450px;
+        height:100%;
+
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    .quotes{
+        font-size: 20px;
+        color: blueviolet;
+        font-weight: 900;
+        position: relative;
+        left:5%;
+    }
+
+    .author{
+        position: relative;
+        left:50%;
+        color: firebrick;
+    }
+ 
+</style>
+
+
+
+<h1 class="main-header">IMPORTANCE</h1>
+
+<button id="back">Back</button>
+
+<img class="final-page" src="./moments-4.jpg">
+
+<div class="about-content">
+    <ul class="quotes">
+        <li>
+            “Memory... is the diary that we all carry about with us.”
+            <p class="author">-  Oscar Wilde</p>
+        </li>
+
+        <li>
+            “One of the best ways to make yourself happy in the present is to recall happy times from the past.” 
+            <p class="author">-  Gretchen Rubin</p>
+
+
+        </li>
+
+        <li>
+            "We can only be said to be alive in those moments when our hearts are conscious of our treasures."
+            <p class="author">-  Thornton Wilder</p>
+
+        </li>
+
+        <li>
+            "Keep a journal of your blessings. Gratitude drives happiness."
+            <p class="author">-  Robin Sharma</p>
+
+        </li>
+
+        <li>
+            “I can shake off everything as I write; my sorrows disappear, my courage is reborn.”
+            <p class="author">-  Anne Frank</p>
+
+        </li>
+    </ul>
+</div>
+
+<script>
+    var back = document.getElementById("back")
+
+
+back.addEventListener("click", function()
+{
+    localStorage.setItem("hidePopup", "true")
+    window.location.href = "home.html"
+    
+   
+})
+
+</script>
